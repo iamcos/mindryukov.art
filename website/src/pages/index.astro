@@ -1,0 +1,19 @@
+---
+import { languages } from "../content/config";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mindryukov Films</title>
+  </head>
+  <body style="font-family: system-ui; padding: 2rem;">
+    <h1>Mindryukov Films</h1>
+    <p>Select language:</p>
+    <ul>
+      {languages.map((l) => (
+        <li><a href={`/${l}/`}>{l.toUpperCase()}</a></li>
+      ))}
+    </ul>
+  </body>
+</html>

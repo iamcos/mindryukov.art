@@ -1,0 +1,29 @@
+# Secrets
+.env
+*.session
+*.session-journal
+
+# Large media
+mindryukov_films/media/videos/
+mindryukov_films/media/audio/
+mindryukov_films/media/documents/
+
+# Data (except summary)
+mindryukov_films/data/posts_metadata/
+mindryukov_films/data/profile_info/
+!mindryukov_films/data/website_summary.json
+
+# Node
+website/node_modules/
+website/.astro/
+website/dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+

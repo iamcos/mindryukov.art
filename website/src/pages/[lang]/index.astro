@@ -1,0 +1,43 @@
+---
+import { languages, type Language } from "../../content/config";
+const { lang } = Astro.params as { lang: Language };
+if (!languages.includes(lang)) {
+  return Astro.redirect("/");
+}
+const about = await import(`../../content/${lang}/about.md`).then(m => m.default).catch(() => null);
+const quotes = await import(`../../content/${lang}/quotes.json`).then(m => m.default).catch(() => []);
+const portfolio = await import(`../../content/${lang}/portfolio.json`).then(m => m.default).catch(() => []);
+---
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mindryukov Films</title>
+  </head>
+  <body style="font-family: system-ui; padding: 2rem;">
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+    <h1>{about?.frontmatter?.title || 'Alexander Mindryukov'}</h1>
+    <p>{about?.frontmatter?.role || 'Filmmaker & Visual Storyteller'}</p>
+    <article>
+      {about ? <about.Content /> : <p>Content coming soon.</p>}
+    </article>
+
+    <h2>Portfolio</h2>
+    <ul>
+      {portfolio.map((item: any) => (
+        <li>
+          <strong>{item.title}</strong> — {item.date}
+        </li>
+      ))}
+    </ul>
+
+    <h2>Quotes</h2>
+    <ul>
+      {quotes.map((q: string) => (
+        <li>“{q}”</li>
+      ))}
+    </ul>
+  </body>
+</html>
