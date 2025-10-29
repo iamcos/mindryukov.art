@@ -1,5 +1,6 @@
 ---
 import { languages } from "../content/config";
+const base = import.meta.env.BASE_URL || "/";
 ---
 <html lang="en">
   <head>
@@ -12,7 +13,7 @@ import { languages } from "../content/config";
     <p>Select language:</p>
     <ul>
       {languages.map((l) => (
-        <li><a href={`/${l}/`}>{l.toUpperCase()}</a></li>
+        <li><a href={`${base}${l}/`}>{l.toUpperCase()}</a></li>
       ))}
     </ul>
   </body>
