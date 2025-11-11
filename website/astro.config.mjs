@@ -1,10 +1,21 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
+import react from '@astrojs/react';
 
+// https://astro.build/config
 export default defineConfig({
-  site: 'https://iamcos.github.io',
-  base: '/mindryukov.art/',
-  outDir: '../dist',
-  build: { assets: 'assets' },
-  integrations: [tailwind()],
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    react(),
+  ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ru', 'ar', 'zh'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });
+

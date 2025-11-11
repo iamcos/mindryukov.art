@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WorkGrid from '../components/WorkGrid.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="Work" description="Portfolio of film, video, and creative projects">
+  <Section id="work-hero" className="pt-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-white">Work</h1>
+      <p class="text-xl text-gray-700 dark:text-gray-300">
+        A collection of film projects, festival coverage, and creative work
+      </p>
+    </div>
+  </Section>
+
+  <Section id="portfolio">
+    <WorkGrid />
+  </Section>
+
+  <Section id="categories">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Categories</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/50 dark:bg-gray-800/50 p-6 rounded-lg backdrop-blur-sm text-center">
+          <div class="text-4xl mb-4">🎬</div>
+          <h3 class="text-xl font-bold mb-2 text-primary-700 dark:text-primary-400">Film & Video</h3>
+          <p class="text-gray-600 dark:text-gray-400">Documentary and creative film projects</p>
+        </div>
+        <div class="bg-white/50 dark:bg-gray-800/50 p-6 rounded-lg backdrop-blur-sm text-center">
+          <div class="text-4xl mb-4">🎵</div>
+          <h3 class="text-xl font-bold mb-2 text-primary-700 dark:text-primary-400">Festival Coverage</h3>
+          <p class="text-gray-600 dark:text-gray-400">Music and art festival documentation</p>
+        </div>
+        <div class="bg-white/50 dark:bg-gray-800/50 p-6 rounded-lg backdrop-blur-sm text-center">
+          <div class="text-4xl mb-4">📸</div>
+          <h3 class="text-xl font-bold mb-2 text-primary-700 dark:text-primary-400">Photography</h3>
+          <p class="text-gray-600 dark:text-gray-400">Visual storytelling through images</p>
+        </div>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
+

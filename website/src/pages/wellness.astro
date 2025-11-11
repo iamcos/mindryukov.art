@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="Wellness" description="Meditation, yoga, retreat centers, and personal growth">
+  <Section id="wellness-hero" className="pt-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-white">Wellness</h1>
+      <p class="text-xl text-gray-700 dark:text-gray-300">
+        Practices, spaces, and journeys toward personal growth and well-being
+      </p>
+    </div>
+  </Section>
+
+  <Section id="practices">
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div class="bg-white/50 dark:bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm">
+        <h2 class="text-3xl font-bold mb-4 text-primary-700 dark:text-primary-400">Meditation & Yoga</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          Regular practice of meditation and yoga provides grounding, clarity, and connection to the present moment. 
+          These practices support personal growth and emotional well-being.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Exploring various techniques and approaches, finding what resonates and supports individual growth and healing.
+        </p>
+      </div>
+
+      <div class="bg-white/50 dark:bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm">
+        <h2 class="text-3xl font-bold mb-4 text-primary-700 dark:text-primary-400">Therapy & Healing</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          Working with therapeutic practices like EMDR (Eye Movement Desensitization and Reprocessing) to process 
+          intense emotions and experiences. These practices help navigate challenges and support emotional healing.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Understanding that healing is a journey, and finding practices that work for individual needs and circumstances.
+        </p>
+      </div>
+
+      <div class="bg-white/50 dark:bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm">
+        <h2 class="text-3xl font-bold mb-4 text-primary-700 dark:text-primary-400">Retreat Centers</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          Creating and maintaining spaces for people to practice, learn, and grow together. Retreat centers offer 
+          environments where individuals can step away from daily routines and focus on personal development.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Caring for these spaces to be cozy, beautiful, neat, and clean - creating an atmosphere that supports 
+          practice and connection.
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-br from-accent-100 to-primary-100 dark:from-accent-900/30 dark:to-primary-900/30 p-8 rounded-lg">
+        <h2 class="text-3xl font-bold mb-4 text-accent-800 dark:text-accent-300">Personal Growth</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Wellness is an ongoing journey of self-discovery, healing, and growth. It involves understanding ourselves, 
+          processing experiences, and creating practices that support our well-being. Through meditation, therapy, 
+          and creating supportive spaces, we can navigate life's challenges and cultivate deeper connection with 
+          ourselves and others.
+        </p>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
+

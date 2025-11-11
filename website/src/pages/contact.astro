@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="Contact" description="Get in touch for collaborations and inquiries">
+  <Section id="contact-hero" className="pt-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-white">Contact</h1>
+      <p class="text-xl text-gray-700 dark:text-gray-300">
+        Let's connect and explore possibilities together
+      </p>
+    </div>
+  </Section>
+
+  <Section id="contact-info">
+    <div class="max-w-3xl mx-auto">
+      <div class="bg-white/50 dark:bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm">
+        <h2 class="text-3xl font-bold mb-6 text-primary-700 dark:text-primary-400">Get in Touch</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Telegram</h3>
+            <a
+              href="https://t.me/mindryukov_films"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+            >
+              @mindryukov_films
+            </a>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Instagram</h3>
+            <a
+              href="https://instagram.com/mindryukov_films"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+            >
+              @mindryukov_films
+            </a>
+          </div>
+          <div class="pt-6 border-t border-gray-200 dark:border-gray-700">
+            <p class="text-gray-700 dark:text-gray-300">
+              For collaborations, project inquiries, or just to connect, feel free to reach out through any of 
+              these channels. I'm always open to exploring new creative possibilities and meaningful connections.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
+

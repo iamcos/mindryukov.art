@@ -1,29 +1,49 @@
-# Secrets
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Environment variables
 .env
+.env.local
+.env.*.local
+
+# Telegram session files
 *.session
 *.session-journal
 
-# Large media
-mindryukov_films/media/videos/
-mindryukov_films/media/audio/
-mindryukov_films/media/documents/
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Data (except summary)
-mindryukov_films/data/posts_metadata/
-mindryukov_films/data/profile_info/
-!mindryukov_films/data/website_summary.json
-
-# Node
-website/node_modules/
-website/.astro/
-website/dist/
-
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# macOS
+# OS
 .DS_Store
+Thumbs.db
+
+# Node (website)
+website/node_modules/
+website/dist/
+website/.astro/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
 

@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "mindryukov films",
+    "description": "Creative portfolio showcasing film work, festivals, and personal projects",
+    "tagline": "Creative storytelling through film, photography, and visual arts"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About",
+    "interests": "Interests",
+    "wellness": "Wellness",
+    "contact": "Contact"
+  }
+}
+

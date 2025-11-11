@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="About" description="Learn about the journey, values, and experiences">
+  <Section id="about-hero" className="pt-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-white">About</h1>
+      <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+        A creative journey exploring the intersection of art, technology, and personal growth.
+      </p>
+    </div>
+  </Section>
+
+  <Section id="journey">
+    <div class="max-w-3xl mx-auto space-y-8">
+      <div class="bg-white/50 dark:bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm">
+        <h2 class="text-3xl font-bold mb-4 text-primary-700 dark:text-primary-400">Personal Journey</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          This journey is about authentic connection, genuine friendships, and creating spaces where people can grow and explore together. 
+          It's about breaking free from limitations and embracing a wide perspective on life.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Through travel, creative work, and personal practices, I've discovered the value of openness, reliability, and supporting 
+          various initiatives. Each experience shapes who we are and how we connect with the world.
+        </p>
+      </div>
+
+      <div class="bg-white/50 dark:bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm">
+        <h2 class="text-3xl font-bold mb-4 text-primary-700 dark:text-primary-400">Values</h2>
+        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start">
+            <span class="text-primary-600 dark:text-primary-400 mr-3">•</span>
+            <span><strong>Authenticity:</strong> Being honest, open, and genuine in all relationships</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-primary-600 dark:text-primary-400 mr-3">•</span>
+            <span><strong>Growth:</strong> Continuously learning and breaking free from limiting patterns</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-primary-600 dark:text-primary-400 mr-3">•</span>
+            <span><strong>Connection:</strong> Creating spaces for meaningful interactions and shared experiences</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-primary-600 dark:text-primary-400 mr-3">•</span>
+            <span><strong>Exploration:</strong> Embracing new experiences and perspectives</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white/50 dark:bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm">
+        <h2 class="text-3xl font-bold mb-4 text-primary-700 dark:text-primary-400">Experiences</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          From the vibrant festivals of India and the serene beaches of Thailand to the creative communities in St. Petersburg, 
+          each place has contributed to this journey. These experiences have shaped a deep appreciation for diverse cultures, 
+          authentic connections, and the beauty of shared adventures.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 mt-6">
+          <div class="text-center p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg">
+            <div class="text-3xl mb-2">🇮🇳</div>
+            <h3 class="font-semibold text-primary-700 dark:text-primary-400">India</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Goa & Beyond</p>
+          </div>
+          <div class="text-center p-4 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
+            <div class="text-3xl mb-2">🇹🇭</div>
+            <h3 class="font-semibold text-accent-700 dark:text-accent-400">Thailand</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Koh Lanta</p>
+          </div>
+          <div class="text-center p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg">
+            <div class="text-3xl mb-2">🇷🇺</div>
+            <h3 class="font-semibold text-primary-700 dark:text-primary-400">Russia</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">St. Petersburg</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
+
