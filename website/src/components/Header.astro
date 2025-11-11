@@ -1,18 +1,19 @@
 ---
+const base = import.meta.env.BASE_URL;
 const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/work', label: 'Work' },
-  { href: '/about', label: 'About' },
-  { href: '/interests', label: 'Interests' },
-  { href: '/wellness', label: 'Wellness' },
-  { href: '/contact', label: 'Contact' },
+  { href: `${base}`, label: 'Home' },
+  { href: `${base}work`, label: 'Work' },
+  { href: `${base}about`, label: 'About' },
+  { href: `${base}interests`, label: 'Interests' },
+  { href: `${base}wellness`, label: 'Wellness' },
+  { href: `${base}contact`, label: 'Contact' },
 ];
 ---
 
 <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
   <nav class="container mx-auto px-4 py-4">
     <div class="flex items-center justify-between">
-      <a href="/" class="text-2xl font-bold text-primary-700 dark:text-primary-400 hover:text-primary-600 dark:hover:text-primary-300 transition-colors">
+      <a href={base} class="text-2xl font-bold text-primary-700 dark:text-primary-400 hover:text-primary-600 dark:hover:text-primary-300 transition-colors">
         mindryukov films
       </a>
       <ul class="hidden md:flex items-center gap-6">

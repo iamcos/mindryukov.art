@@ -1,0 +1,62 @@
+{
+  "chat_name": "Hostel Roi",
+  "extracted_at": "2025-01-28T10:30:00",
+  "total_contacts": 2,
+  "contacts": [
+    {
+      "message_id": 123,
+      "date": "2025-01-20T15:30:00",
+      "sender": {
+        "id": 456789,
+        "username": "example_user",
+        "first_name": "John",
+        "last_name": "Doe"
+      },
+      "text": "Hey! Check out our website https://example.com or contact us at john@example.com or @john_doe on Telegram!",
+      "links": [
+        "https://example.com",
+        "https://t.me/john_doe"
+      ],
+      "descriptions": {
+        "https://example.com": "Example Company - We provide amazing services for travelers",
+        "https://t.me/john_doe": "Telegram link - may contain contact information"
+      },
+      "status": "not_contacted",
+      "notes": "Email: john@example.com\nTelegram: @john_doe\n",
+      "last_contact_date": null,
+      "contact_method": "email",
+      "priority": "medium",
+      "tags": [],
+      "next_action": null,
+      "follow_up_date": null
+    },
+    {
+      "message_id": 124,
+      "date": "2025-01-21T10:15:00",
+      "sender": {
+        "id": 789012,
+        "username": "travel_host",
+        "first_name": "Sarah",
+        "last_name": null
+      },
+      "text": "For bookings, call us at +1-555-123-4567 or visit our Instagram @travel_host",
+      "links": [
+        "https://instagram.com/travel_host"
+      ],
+      "descriptions": {
+        "https://instagram.com/travel_host": "Travel Host Instagram Profile"
+      },
+      "status": "not_contacted",
+      "notes": "Phone: +1-555-123-4567\nTelegram: @travel_host\n",
+      "last_contact_date": null,
+      "contact_method": "phone",
+      "priority": "high",
+      "tags": ["instagram", "booking"],
+      "next_action": "Send initial inquiry about partnership",
+      "follow_up_date": "2025-02-01"
+    }
+  ]
+}
+
+
+

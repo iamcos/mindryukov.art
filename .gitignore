@@ -47,3 +47,10 @@ tmp/
 temp/
 *.tmp
 
+# Large media files (use Git LFS if needed)
+mindryukov_films/media/**/*.MOV
+mindryukov_films/media/**/*.mp4
+mindryukov_films/media/**/*.mp3
+mindryukov_films/media/**/*.jpg
+mindryukov_films/media/**/*.png
+
